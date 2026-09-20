@@ -27,87 +27,8 @@ body {
   overflow-x: hidden;
   color: var(--navy);
   font-family: 'DM Sans', 'Trebuchet MS', sans-serif;
-  background-color: var(--cream);
-  background-image:
-    linear-gradient(rgba(155, 194, 208, 0.22) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(200, 70, 70, 0.12) 1px, transparent 1px),
-    linear-gradient(135deg, rgba(220, 236, 241, 0.72), transparent 48%);
-  background-size: 32px 32px, 32px 32px, 100% 100%;
+  background-color: #ffffff;
 }
-
-.background-motifs {
-  position: fixed;
-  z-index: 0;
-  pointer-events: none;
-  inset: 0;
-}
-
-.corner-motif,
-.side-motif {
-  position: absolute;
-  pointer-events: none;
-}
-
-.corner-motif {
-  width: min(350px, 29vw);
-  aspect-ratio: 1.307 / 1;
-  background: url('corner.png') center / contain no-repeat;
-  opacity: 0.52;
-}
-
-.corner-top-left {
-  top: -38px;
-  left: -38px;
-  transform: scaleY(-1);
-}
-
-.corner-top-right {
-  top: -38px;
-  right: -38px;
-  transform: scale(-1, -1);
-}
-
-.corner-bottom-left {
-  bottom: -38px;
-  left: -38px;
-}
-
-.corner-bottom-right {
-  right: -38px;
-  bottom: -38px;
-  transform: scaleX(-1);
-}
-
-.side-motif {
-  top: 50%;
-  width: min(290px, 22vw);
-  aspect-ratio: 1.307 / 1;
-  background: url('bgelement1.png') center / contain no-repeat;
-  opacity: 0.42;
-}
-
-.side-left {
-  left: -92px;
-  transform: translateY(-50%) rotate(90deg);
-}
-
-.side-right {
-  right: -92px;
-  transform: translateY(-50%) rotate(-90deg);
-}
-
-.ring-motif {
-  position: absolute;
-  width: 105px;
-  aspect-ratio: 1;
-  background: url('element.png') center / contain no-repeat;
-  opacity: 0.2;
-}
-
-.ring-upper-left { width: 105px; top: 8%; left: 8%; transform: rotate(-16deg); }
-.ring-upper-right { width: 135px; top: 10%; right: 8%; transform: rotate(18deg); }
-.ring-lower-left { width: 125px; bottom: 8%; left: 8%; transform: rotate(24deg); }
-.ring-lower-right { width: 95px; right: 8%; bottom: 8%; transform: rotate(22deg); }
 
 .page {
   position: relative;
@@ -1085,48 +1006,6 @@ select:focus {
 @media (max-width: 640px) {
   .page {
     padding: 28px 18px 56px;
-  }
-
-  .corner-motif {
-    width: 230px;
-    opacity: 0.42;
-  }
-
-  .corner-top-left,
-  .corner-top-right {
-    top: -28px;
-  }
-
-  .corner-bottom-left,
-  .corner-bottom-right {
-    bottom: -28px;
-  }
-
-  .corner-top-left,
-  .corner-bottom-left {
-    left: -28px;
-  }
-
-  .corner-top-right,
-  .corner-bottom-right {
-    right: -28px;
-  }
-
-  .side-motif {
-    width: 175px;
-    opacity: 0.32;
-  }
-
-  .side-left {
-    left: -72px;
-  }
-
-  .side-right {
-    right: -72px;
-  }
-
-  .ring-motif {
-    opacity: 0.16;
   }
 
   .topbar {
