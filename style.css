@@ -65,17 +65,19 @@ body {
 }
 
 .brand-logo-frame {
-  width: 380px;
-  height: 140px;
+  width: 260px;
+  height: 150px;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .brand-logo-frame img {
   display: block;
-  height: auto;
-  width: 380px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .brand-label {
   display: inline-block;
@@ -1022,12 +1024,13 @@ select:focus {
   }
 
   .brand-logo-frame {
-    width: min(330px, 88vw);
-    height: 116px;
+    width: min(220px, 60vw);
+    height: 126px;
   }
 
   .brand-logo-frame img {
-    width: min(330px, 88vw);
+    width: 100%;
+    height: 100%;
   }
 
   .tabs {
